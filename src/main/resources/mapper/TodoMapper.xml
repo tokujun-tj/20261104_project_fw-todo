@@ -10,4 +10,9 @@
         ORDER BY due_date ASC
     </select>
 
+    <insert id="insert">
+        INSERT INTO todos (title, detail, category, priority, due_date)
+        VALUES (#{title}, #{detail}, #{category}, #{priority}, #{dueDate})
+    </insert>
+
 </mapper>
