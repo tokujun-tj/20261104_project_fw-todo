@@ -28,7 +28,7 @@
         WHERE id = #{id}
     </select>
 
-    <insert id="insert">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO todos (title, detail, category, priority, due_date)
         VALUES (#{title}, #{detail}, #{category}, #{priority}, #{dueDate})
     </insert>
